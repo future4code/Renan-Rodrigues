@@ -1,0 +1,3 @@
+# Aprendizados da semana
+
+Essa primeira semana na **Labenu** tem sido uma **ótima experiência**, pude dar os primeiros passos na programação de verdade. Aprendi sobre o funcionamento do slack, vímeo, notion e principalmente **como funciona o terminal** e seus principais comandos. Além disso, tão importante quanto, aprendi a dar os **primeiros passos no Github**, subindo as atividades para a plataforma. 
