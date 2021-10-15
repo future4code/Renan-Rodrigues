@@ -97,3 +97,11 @@
     
 // }
 // console.log (resultado)
+
+
+const verificaImpar (numero) =>{
+    if ( numero % !==0 ){
+        const resultado = numero % !==0
+        console.log (resutado)
+    }
+}
