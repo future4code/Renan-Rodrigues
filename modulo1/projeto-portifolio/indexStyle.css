@@ -1,0 +1,80 @@
+
+body{
+    background-color:rgb(86, 86, 226)
+}
+
+.Topo{
+
+    background-color: goldenrod;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 70px;
+    border:solid gray;
+}
+
+h1 {
+    margin-left: 530px;
+    padding-top: 10px;
+}
+
+h2{
+    
+    margin-left: 550px;
+    margin-top: 35px;
+}
+
+h3 {
+    margin-left: 460px;
+    color:black;
+}
+
+.botao-projetos{
+    margin-left: 850px;
+    color:goldenrod;
+    
+}
+
+.fraseinicial{
+    margin-left: 380px;
+    margin-top: 70px;
+}
+.Descrição1{
+    margin-left: 50px;
+    color:goldenrod;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.Descrição2{
+    margin-left: 50px;
+    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-left: 100px;
+    color:goldenrod;
+}
+.nomeEstudante{
+    margin-left: 40px;
+}
+
+.segundaparte{
+    
+    background-color: goldenrod;
+    height: 100px;
+    margin-bottom: 0px;
+    border-radius: 70px;
+    border:solid gray;
+    padding-left: 150;
+    
+}
+
+.Dados{
+    
+    margin-left: 430px;
+    color: goldenrod;
+}
+
+.formulario{
+    padding-left: center;
+    color: black;
+}
+
