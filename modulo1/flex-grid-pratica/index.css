@@ -1,0 +1,67 @@
+
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+header{
+    background-color:salmon;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 70px;
+}
+
+#busca{
+    margin-right: 50px;
+}
+
+
+body{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-rows: 80px 1fr 70px;
+    background-color: rgb(64, 128, 153);
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: 250px;
+    width: 250px;
+    border:solid salmon;
+}
+.container-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container-imagens >div{
+    
+    flex: 1 1 200px;
+    margin: 28px
+
+
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+footer{
+    margin-top: 530px;
+    height: 50px;
+    text-align: center;
+    background-color: salmon;
+    margin-top: 50px;
+}

@@ -1,0 +1,53 @@
+
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.video{
+    height: 460px;
+    width: 460px;
+    display: flex; 
+    margin-top: 20px;
+     margin-left: 240px;
+}
+
+header{
+    background-color:salmon;
+    
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 70px;
+}
+#busca{
+    margin-right: 50px;
+}
+
+body{
+    background-color: rgb(64, 128, 153);
+    
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+footer{
+
+    height: 45px;
+    text-align: center;
+    background-color: salmon;
+    margin-top: 15px;
+}
+
+#texto-rodape{
+    margin-top: 10px;
+}
