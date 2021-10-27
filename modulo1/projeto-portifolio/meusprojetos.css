@@ -1,0 +1,39 @@
+
+body{
+    background-color:rgb(86, 86, 226)
+}
+
+.Topo{
+    background-color:goldenrod;
+    border-radius: 60px;
+
+}
+
+h1 {
+    margin-left: 400px;
+    color:black;
+}
+
+h3 {
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+img{
+    width: 700px;
+    padding-left: 230px;
+}
+
+.nome-estoque{
+    padding-left: 500px;
+    color:goldenrod;
+}
+
+.nome-adcprodutos{
+    padding-left: 500px;
+    color: goldenrod;
+}
+
+p{
+    color: goldenrod;
+}
