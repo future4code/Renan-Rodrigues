@@ -1,0 +1,107 @@
+
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+header{
+    background-color:salmon;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 70px;
+}
+
+@media screen and (max-device-width : 480px) {
+
+    header{
+        /* grid-template-columns: 1fr; */
+
+        flex-direction: column;
+    }
+
+}
+
+
+#busca{
+    margin-right: 50px;
+}
+
+
+body{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-rows: 80px 1fr 70px;
+    background-color: rgb(64, 128, 153);
+}
+img{
+    /* max-width: 100%; */
+    display: block;
+    height: 230px;
+    width: 230px;
+    border:solid salmon;
+}
+.container-imagens{
+     /* display: flex; */
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-left: 100px;
+    /* margin: 0 auto;   */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    
+    
+}
+
+.container-img-itens{
+    
+    /* flex: 1 1 200px; */
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+@media screen and (max-device-width : 480px) {
+    /* celulares */
+    .container-imagens{
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.container-img-itens{
+    height: 250px;
+    align-items:flex-start;
+    margin: 15px;
+    
+}
+
+
+p{
+    margin-top: 10px;
+    margin-left: 30px;
+    
+}
+
+.natureza-item{
+    margin-left: 25px;
+}
+
+.paisagem-nevoa-item{
+    margin-left: 50px;
+}
+
+
+footer{
+    margin-top: 530px;
+    height: 50px;
+    text-align: center;
+    background-color: salmon;
+    margin-top: 50px;
+
+    
+}
