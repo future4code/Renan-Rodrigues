@@ -1,0 +1,120 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 10px;
+    background-color: mediumvioletred;
+}
+
+main{
+    
+    height: 500px;
+    width: 250px;
+    /* border: solid 1px black; */
+    background-color:#f2d0e0 ;
+}
+
+.Home{
+    height: 30px;
+    /* margin-top: 25px; */
+    padding: 0 20px;
+}
+
+.Produtos{
+    height: 30px;
+    padding: 0 20px;
+}
+
+.Carrinho{
+    height: 30px;
+    padding: 0 20px;
+}
+
+.Perfil{
+    height: 30px;
+    margin-left: 13px;
+}
+
+img{
+    height: 20px;
+    padding: 0 8px 0 2px;
+}
+#setas{
+    padding: 0 0 0 100px;
+}
+
+#setas2{
+    padding: 0 0 0 60px;
+}
+#setas3{
+    padding: 0 0 0 60px;
+}
+
+#setas4{
+    padding: 0 0 0 100px;
+}
+
+/* #fotos-bolos{
+    height: 100px;
+} */
+
+.container-bolos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align:center;
+       
+    
+}
+
+#meus-bolos{
+    
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 250px;
+     
+     
+}
+
+#meus-bolos img{
+    width: 170px;
+    height: 170px;
+    align-items:center;
+    padding: 18px;
+}
+
+
+ /* .tabela{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+     
+     border: solid 1px black; 
+}  */
+
+
+
+
+
+footer{
+    border: 1px solid;
+    height: 50px;
+    background-color: mediumvioletred;
+    text-align: center;
+}
+.texto-rodape{
+
+    padding-left: 150px;
+    padding-top: 20px;
+}
