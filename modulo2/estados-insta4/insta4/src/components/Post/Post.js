@@ -99,6 +99,7 @@ class Post extends React.Component {
       <PostHeader>
         <UserPhoto src="https://picsum.photos/200/300"alt={'Imagem do usuario'}/>
         <p>{this.props.nomeUsuario}</p>
+        
       </PostHeader>
 
       <PostPhoto src={this.props.fotoPost} alt={'Imagem do post'}/>
@@ -115,6 +116,8 @@ class Post extends React.Component {
           onClickIcone={this.onClickComentario}
           valorContador={this.state.numeroComentarios}
         />
+
+        
       </PostFooter>
       {componenteComentario}
     </PostContainer>
