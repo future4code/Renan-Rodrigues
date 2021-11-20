@@ -3,12 +3,16 @@ import axios from "axios";
 import styled from "styled-components";
 
 const CardPlaylists = styled.div`
-border: 1px solid black;
+/* border: 1px solid black;
+background-color:blue; */
 padding: 10px;
-margin:  10px;
-width: 300px;
+margin:  30px;
+margin-left: 380px;
+width: 100px;
 display:flex;
-justify-content:space-between;
+flex-direction:column;
+align-items:center; 
+
 
 `
 export default class VerPlaylists extends React.Component {
@@ -82,7 +86,7 @@ export default class VerPlaylists extends React.Component {
             const listaPlaylists = this.state.minhasPlaylists.map((itens) => {
               
                 return (
-                <CardPlaylists key={itens.id}> {itens.name} <button onClick={()=> this.deletaPlaylists(itens.id)}>X</button> <button>Adicionar música</button> </CardPlaylists>
+                <CardPlaylists key={itens.id}> {itens.name} <button className="botao-deletar" onClick={()=> this.deletaPlaylists(itens.id)}>Deletar Playlist</button></CardPlaylists>
                 
             
                 
@@ -97,12 +101,11 @@ export default class VerPlaylists extends React.Component {
             return (
                 <div>
                     <button onClick ={this.props.irParaInformacoesPlaylists}> Detalhes da Playlist</button>
-                        <h2> Minhas Playlists</h2>     
+                    <h2 className="texto-pag2"> Minhas Playlists</h2>  
+                <CardPlaylists>
+                    
+                        {/* <h2 className="texto-pag2"> Minhas Playlists</h2>      */}
                                 {listaPlaylists}
-
-
-                
-
 
 
              {/* <button onClick={this.mostraPlaylists}>  Playlists Cadastradas  </button>
@@ -118,6 +121,7 @@ export default class VerPlaylists extends React.Component {
 }         */}
 
 
+                </CardPlaylists>
                 </div>
             )
 

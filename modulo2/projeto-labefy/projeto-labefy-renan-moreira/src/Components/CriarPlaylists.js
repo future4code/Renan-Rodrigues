@@ -1,16 +1,21 @@
 import React from "react"
 import axios from "axios";
-import styled from "styled-components";
+// import  GlobalStyle  from './Components/styles'
+import styled from 'styled-components';
 
 const CardInicial = styled.div`
-border: 1px solid black;
+
 padding: 10px;
-margin:  10px;
-width: 300px;
-display:flex;
-justify-content:space-between;
+margin:  50px;
+margin-left: 500px;
+
+
+/* display:flex;
+justify-content:space-between;  */
 
 `
+
+
 
 
 export default class CriarPlaylists extends React.Component {
@@ -111,12 +116,17 @@ export default class CriarPlaylists extends React.Component {
 
       
         return (
-            <div>
-                <button onClick ={this.props.irParaVerPlaylists}> Acessar Playlists</button>
+          
+          <div>
+            <button onClick ={this.props.irParaVerPlaylists}> Acessar Playlists</button>
+            <CardInicial>
+              {/* <GlobalStyle/> */}
+              
+                
 
                 
                 <h2> Crie sua PlayList personalizada!</h2>
-                <input placeholder ={"Nome da Playlist"} value ={this.state.nomePlaylist} onChange ={this.onChangePlaylist} />
+                <input placeholder ={"Nome da Playlist"}className="texto-inserido" value ={this.state.nomePlaylist} onChange ={this.onChangePlaylist} />
                
                 <button onClick = {this.criaPlaylists}> Adicionar</button>
 
@@ -132,8 +142,8 @@ export default class CriarPlaylists extends React.Component {
                 
 
 
-            </div>
-
+            </CardInicial>
+          </div>
 
         )
 

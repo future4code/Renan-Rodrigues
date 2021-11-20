@@ -1,8 +1,23 @@
 import React from "react";
 import axios from "axios";
+import  GlobalStyle  from './Components/styles'
+import styled from 'styled-components';
+import tema from './Components/img/tema.jpeg'
 import CriarPlaylists from "./Components/CriarPlaylists";
 import VerPlaylists from "./Components/VerPlaylists";
 import InformacoesPlaylists from "./Components/InformacoesPlaylists";
+
+
+const Header = styled.div`
+text-align:center;
+/* border:solid #e67213 3px; */
+background-color:orange;
+border-radius:40px;
+
+
+`
+
+
 
 export default class App extends React.Component {
 
@@ -54,7 +69,12 @@ export default class App extends React.Component {
 
     return (
       <div>
+        <GlobalStyle/>
+        { <img className="tema" src={tema}/>}
 
+        <Header>
+          <h1>labefy</h1>
+        </Header>
 
         {this.escolheTela()}
 
