@@ -10,12 +10,7 @@ margin:  50px;
 margin-left: 500px;
 
 
-/* display:flex;
-justify-content:space-between;  */
-
 `
-
-
 
 
 export default class CriarPlaylists extends React.Component {
@@ -103,45 +98,29 @@ export default class CriarPlaylists extends React.Component {
 
     render () {
 
-    //   const listaMusicas = this.state.minhasMusicas.map((music) => {
-              
-    //     return (
-    //     <CardInicial key={music.id}> {music.artist}-{music.name} <button onClick={()=> this.adicionarMusica(music.id)}>Adicionar</button></CardInicial>
-        
-
-    //     )
-        
-      
-    // })
-
-      
+  
         return (
           
           <div>
             <button onClick ={this.props.irParaVerPlaylists}> Acessar Playlists</button>
             <CardInicial>
-              {/* <GlobalStyle/> */}
               
-                
-
-                
-                <h2> Crie sua PlayList personalizada!</h2>
+              
+                <h3> Crie sua PlayList personalizada!</h3>
                 <input placeholder ={"Nome da Playlist"}className="texto-inserido" value ={this.state.nomePlaylist} onChange ={this.onChangePlaylist} />
                
                 <button onClick = {this.criaPlaylists}> Adicionar</button>
 
-                <h2> Adicione Artista</h2>
+                <h3> Adicione Artistas</h3>
                 <input placeholder ={"Nome do Artista"} value ={this.state.nomeMusica} onChange ={this.onChangeMusica} />
                
                 <button onClick = {this.adicionarMusica}> Adicionar</button>
-                <h2> Adicione Musica</h2>
+                <h3> Adicione Músicas</h3>
                 <input placeholder ={"Nome da Música"} value ={this.state.artistaMusica} onChange ={this.onChangeArtistaMusica} />
                
                 <button onClick = {this.adicionarMusica}> Adicionar</button>
-                {/* {listaMusicas} */}
                 
-
-
+                
             </CardInicial>
           </div>
 

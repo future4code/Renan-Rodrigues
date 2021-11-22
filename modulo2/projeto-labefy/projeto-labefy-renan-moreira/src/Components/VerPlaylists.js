@@ -3,8 +3,6 @@ import axios from "axios";
 import styled from "styled-components";
 
 const CardPlaylists = styled.div`
-/* border: 1px solid black;
-background-color:blue; */
 padding: 10px;
 margin:  30px;
 margin-left: 380px;
@@ -12,7 +10,6 @@ width: 100px;
 display:flex;
 flex-direction:column;
 align-items:center; 
-
 
 `
 export default class VerPlaylists extends React.Component {
@@ -72,15 +69,13 @@ export default class VerPlaylists extends React.Component {
              
               })
               .catch((err) => {
-                //   alert("Erro encontrado, tente novamente!")
-                console.log(err.response.data)
+                  alert("Erro encontrado, tente novamente!")
+                // console.log(err.response.data)
                
               });
           };
 
          
-
-
         
           render (){
             const listaPlaylists = this.state.minhasPlaylists.map((itens) => {
@@ -88,39 +83,18 @@ export default class VerPlaylists extends React.Component {
                 return (
                 <CardPlaylists key={itens.id}> {itens.name} <button className="botao-deletar" onClick={()=> this.deletaPlaylists(itens.id)}>Deletar Playlist</button></CardPlaylists>
                 
-            
-                
-
                 )
                 
               
             })
-          
-                              
+                           
 
             return (
                 <div>
                     <button onClick ={this.props.irParaInformacoesPlaylists}> Detalhes da Playlist</button>
                     <h2 className="texto-pag2"> Minhas Playlists</h2>  
                 <CardPlaylists>
-                    
-                        {/* <h2 className="texto-pag2"> Minhas Playlists</h2>      */}
-                                {listaPlaylists}
-
-
-             {/* <button onClick={this.mostraPlaylists}>  Playlists Cadastradas  </button>
-                {
-                this.state.minhasPlaylists.map((adicionadas) => {
-                if (adicionadas.name){
-                    return <CardPlaylists key={adicionadas.id}>{adicionadas.name} <button onClick={()=> this.deletaPlaylists(adicionadas.id)}>X</button></CardPlaylists>
-                }
-
-
-})
-
-}         */}
-
-
+                     {listaPlaylists}
                 </CardPlaylists>
                 </div>
             )
@@ -128,30 +102,4 @@ export default class VerPlaylists extends React.Component {
           }
             
         }
-    // render() {
-    //     // const listaPlaylists = this.state.minhasPlaylists.map((itens) => {
-    //     //     return (<CardPlaylists key={itens.id}> {itens.nomePlaylist} </CardPlaylists>)
-           
-            
-    //     // })
     
-    //     return (
-    //         <div>
-
-    //         {/* //     <button onClick ={this.props.irParaInformacoesPlaylists}> Detalhes da Playlist</button>
-    //         //     <h2> Minhas Playlists</h2> */}
-                
-    //             {/* {listaPlaylists} */}
-                
-    //             {/* {
-
-    //             this.state.minhasPlaylists.map(itens => {
-    //              return <CardPlaylists key={itens.id}> {itens.nomePlaylist} </CardPlaylists>
-    //             })
-              
-    //              } */}
-     
-    //         </div>
-
-    //     )
-    // }

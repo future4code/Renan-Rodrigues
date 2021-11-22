@@ -8,29 +8,30 @@ export default createGlobalStyle `
 *{ 
  margin:0;
 padding:0;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
 .tema{
 
-width: 1270px;
+width: 1280px;
 height: 250px;
      
 }
 
 body {
 
-    background-color:#e5e5e5;
+    background-color:#7d7574;
 
 }
-
-/* .texto-inserido {
-    color:orange;
-} */
 
 h2 {
 
     color:black;
-    /* margin-right: 330px; */
+   
+}
+
+h3{
+    color:black;
 }
 .texto-pag2{
     /* border:solid 3px red; */
@@ -41,7 +42,6 @@ h2 {
 }
 .botao-deletar{
     margin-top: 30px;
-    border:solid 2px orange;
-    background-color:orange;	
+    	
 }
 `
