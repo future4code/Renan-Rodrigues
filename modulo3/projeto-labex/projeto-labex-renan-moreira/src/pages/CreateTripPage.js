@@ -1,12 +1,12 @@
 import React from "react"
 
-export const LoginPage = () =>{
+export const CreateTripPage = () =>{
 
     return (
 
         <div>
         
-        <p> LoginPage </p>
+        <p> CreateTripPage </p>
 
         </div>
 

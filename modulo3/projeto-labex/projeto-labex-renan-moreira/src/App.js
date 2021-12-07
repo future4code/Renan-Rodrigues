@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router } from "./route/Router"
 
-function App() {
+
+
+export default function App() {
   return (
-    <div >
-     Olá!!
+    <div>
+
+      <Router />
+
     </div>
+     
   );
 }
 
-export default App;
