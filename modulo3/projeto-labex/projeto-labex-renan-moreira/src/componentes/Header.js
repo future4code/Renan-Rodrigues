@@ -13,11 +13,16 @@ export const Header = () =>{
     border:solid 2px black;
     
     ` 
+ 
 
 const history = useHistory ()
 
 const irParaHome = () =>{
 history.push ("/")
+
+}
+const irParaAreaAdmin = () =>{
+    history.push ("/login")
 
 }
 
@@ -28,7 +33,9 @@ history.push ("/")
        <div>
         <Header>
 
-        <button onClick ={irParaHome}> Home </button>
+        <button className ="CardBotao-Header" onClick ={irParaHome}> Home </button>
+        <button className ="CardBotao-Header" onClick ={irParaAreaAdmin}> Área de Admin </button>
+        
       
         </Header>
 

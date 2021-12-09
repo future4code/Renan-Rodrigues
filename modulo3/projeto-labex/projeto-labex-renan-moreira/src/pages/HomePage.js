@@ -14,24 +14,23 @@ export const HomePage = () =>{
 
     }
 
-    const irParaAreaAdmin = () =>{
-        history.push ("/login")
-
-    }
+    
 
     return (
         
         <div>
-             { <img className="tema" src={tema}   />}
+             {/* { <img className="tema" src={tema}   />} */}
 
-            <div className = "Card-home">
+            <h3 className="texto-apresentacao">Na Labenu você aprende a programar do zero! Nossa formação Web Full Stack contém. </h3>
+            <div className = "Card-logo">
+            <h1 className = "home"> LABEX</h1>
+            <h3>Sua melhor experiência!</h3>
+        <button className ="CardBotao-Viagens" onClick ={irParaVerViagens}> VER VIAGENS</button>
+         </div>
 
-            <h1 className = "home"> Home Page</h1>
-        <button className ="CardBotao-home" onClick ={irParaVerViagens}> Ver Viagens</button>
-        <button className ="CardBotao-home" onClick ={irParaAreaAdmin}> Área de Admin </button>
-        
-        
-        </div>
+
+
+
 
         </div>
 

@@ -19,6 +19,7 @@ body {
 Header {
 
     background-color: green;
+  
 }
 
 .home {
@@ -32,27 +33,48 @@ Header {
 
 width: 100%;
 height: 500px;
-filter: opacity(85%);
+filter: opacity(90%);
      
 }
 
-.Card-home {
+.texto-apresentacao {
+position: absolute;
+border:solid 1px black;
+
+bottom: 480px;
+margin-left: 50px;
+}
+
+.Card-logo {
 
 border: solid 1px red;
 position: absolute;
-background-color: green;
-filter: opacity(70%);
-bottom: 350px;
+/* background-color: green; */
+filter: opacity(90%);
+bottom: 300px;
 margin-left: 750px;
+text-align:center;
+
+
+}
+
+.CardBotao-Viagens {
+
+    height: 80px;
+    width: 300px;
+    border-radius: 40px;
+}
+.CardBotao-Adm {
+
+height: 30px;
+width: 100px;
+display:flex;
+
 
 
 
 }
 
-.CardBotao-home {
-
-    height: 50px;
-}
 
 
 

@@ -9,6 +9,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import {Header} from '../componentes/Header';
 import styled from 'styled-components';
 import GlobalStyle from "../componentes/Style"
+import { Footer } from '../componentes/Footer';
 
 export const Router = () =>{
   return (
@@ -47,9 +48,11 @@ export const Router = () =>{
      </Route>
 
 
-
+ 
      </Switch>
+     {/* <Footer /> */}
      </BrowserRouter> 
+     
   );
 }
 
