@@ -21,10 +21,11 @@ export const HomePage = () =>{
         <div>
              { <img className="tema" src={tema}   />}
 
-            <h3 className="texto-apresentacao">Na Labenu você aprende a programar do zero! Nossa formação Web Full Stack contém. </h3>
+            <h3 className="texto-apresentacao">Explorar Planetas é muito mais do que viajar.</h3>
+            <h3 className="sub-texto-apresentacao">É viver experiências sem limites...  </h3>   
             <div className = "Card-logo">
             <h1 className = "home"> LABEX</h1>
-            <h3>Sua melhor experiência!</h3>
+          
         <button className ="CardBotao-Viagens" onClick ={irParaVerViagens}> VER VIAGENS</button>
          </div>
 

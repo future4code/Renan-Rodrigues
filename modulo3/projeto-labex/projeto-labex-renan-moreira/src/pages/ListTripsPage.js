@@ -18,21 +18,21 @@ const irParaIncreverViagens = () =>{
 
 }
 
-const [listTrips, setListTrips] = useState ([]);
+const [trips, setTrips] = useState ({});
 // const [listTripsName, setListTripsName] = useState ("");
 
 
-  useEffect(() => {
-    axios
-      .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/renan-moreira-carver/trips")
-      .then((res) => {
-        console.log (res.data);
-        setListTrips(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/renan-moreira-carver/trips")
+  //     .then((res) => {
+  //       console.log (res.data);
+  //       setListTrips(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   // const onChangeName = (event) => {
   //   setListTripsName(event.target.value);
@@ -54,25 +54,25 @@ const [listTrips, setListTrips] = useState ([]);
 
 
 
-//   const getTrip = () => {
-//     axios
-//       .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/renan-moreira-carver/trips")
-//       .then((res) => {
-//         console.log (res.data)
-//         setListTrips (res.data)
+  const getTrip = () => {
+    axios
+      .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/renan-moreira-carver/trips")
+      .then((res) => {
+        console.log (res.data)
+        setTrips (res.data.trip)
 
-//       })
-//       .catch((error) => {
-//         // console.log(error.response.data);
+      })
+      .catch((error) => {
+        // console.log(error.response.data);
         
-//       });
-//   };
-//   useEffect(() => {
-//     getTrip();
-//   }, []);
+      });
+  };
+  // useEffect(() => {
+  //   getTrip();
+  // }, []);
 
-  
-
+    
+   
     return (
 
         <div>
@@ -82,7 +82,10 @@ const [listTrips, setListTrips] = useState ([]);
         <button onClick ={irParaHome}> Voltar </button>
         <button onClick ={irParaIncreverViagens}> Inscreva-se </button>
         {/* {listTrips} */}
-       
+       {/* <p>{trips.name}</p>
+       {listaViagens}
+       <button onClick ={getTrip}>mostrar viagens</button> */}
+
         {/* <select onChange={onChangeName}>
         <option value={""}>Nenhum</option>
         {listTrips.map((viagens) => {

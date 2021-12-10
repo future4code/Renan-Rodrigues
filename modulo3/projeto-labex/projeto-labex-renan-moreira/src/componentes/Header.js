@@ -8,9 +8,13 @@ import { useHistory } from "react-router-dom"
 export const Header = () =>{
 
     const Header = styled.div `
-    background-color: #BAE2C3;
+    background-color: black;
     height: 60px;
-    border:solid 2px black;
+    
+    border:solid 2px orange;
+    border-top:none;
+    border-left:none;
+    border-right:none;
     
     ` 
  

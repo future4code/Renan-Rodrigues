@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom"
+import tema2 from "../componentes/tema2.jpg"
 
 export const LoginPage = () =>{
 
@@ -49,9 +50,12 @@ export const LoginPage = () =>{
     return (
 
         <div>
-        
-        <p> LoginPage </p>
 
+        <div>{ <img className="tema2" src={tema2}   />} </div>
+        
+        <h2 className="texto-login"> CADASTRAR VIAGEM </h2>
+
+      <div className="Card-Login">
         <input
         placeholder = "email"
         type = "email"
@@ -64,9 +68,10 @@ export const LoginPage = () =>{
         value={password}
         onChange={onChangePassword}
       />
-
         <button onClick = {efetuarLogin, irParaPainelAdm}> Entrar </button>
         </div>
+
+     </div>   
 
     )
 
