@@ -9,7 +9,7 @@ export const Header = () =>{
 
     const Header = styled.div `
     background-color: #BAE2C3;
-    height: 100px;
+    height: 60px;
     border:solid 2px black;
     
     ` 

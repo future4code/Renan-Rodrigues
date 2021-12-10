@@ -19,7 +19,7 @@ export const HomePage = () =>{
     return (
         
         <div>
-             {/* { <img className="tema" src={tema}   />} */}
+             { <img className="tema" src={tema}   />}
 
             <h3 className="texto-apresentacao">Na Labenu você aprende a programar do zero! Nossa formação Web Full Stack contém. </h3>
             <div className = "Card-logo">

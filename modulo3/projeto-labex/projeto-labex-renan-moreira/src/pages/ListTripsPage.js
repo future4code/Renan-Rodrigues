@@ -34,22 +34,22 @@ const [listTrips, setListTrips] = useState ([]);
       });
   }, []);
 
-//   const onChangeName = (event) => {
-//     setListTripsName(event.target.value);
-//   };
+  // const onChangeName = (event) => {
+  //   setListTripsName(event.target.value);
+  // };
 
-const mapListaTrips = listTrips.map ((viagem)=>{
-    return (
-     <div>
-      
-        <p>Nome: {viagem.name}</p>
-        <p>Descrição: {viagem.description}</p>
+//  mapListaTrips = listTrips.map ((viagem)=>{
+//     return (
+//      <div>
+ 
+//         <p>Nome: {viagem.name}</p>
+//         <p>Descrição: {viagem.description}</p>
 
-        </div>
+//         </div>
     
-    )
+//     )
 
-})
+// })
 
 
 
@@ -81,9 +81,8 @@ const mapListaTrips = listTrips.map ((viagem)=>{
 
         <button onClick ={irParaHome}> Voltar </button>
         <button onClick ={irParaIncreverViagens}> Inscreva-se </button>
-        {listTrips}
+        {/* {listTrips} */}
        
-        
         {/* <select onChange={onChangeName}>
         <option value={""}>Nenhum</option>
         {listTrips.map((viagens) => {
@@ -98,8 +97,7 @@ const mapListaTrips = listTrips.map ((viagem)=>{
       {/* {pokeName && <PokeCard pokemon={pokeName} />} */}
 
 
-
-
+    
 
         {/* <select onChange={onChangeName}>
         <option value={""}>Nenhum</option>

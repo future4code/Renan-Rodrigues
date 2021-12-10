@@ -31,8 +31,12 @@ Header {
 
 .tema{
 
-width: 100%;
-height: 500px;
+width: 700px;
+height: 700px;
+margin-left: 500px;
+/* padding: 50px; */
+
+
 filter: opacity(90%);
      
 }
@@ -70,7 +74,13 @@ height: 30px;
 width: 100px;
 display:flex;
 
+.Create-Form{
+    
+display:flex;
 
+border:solid 1px;
+
+}
 
 
 }
