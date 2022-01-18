@@ -1,24 +1,18 @@
 
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import {primaryColor, secondaryColor} from "./colors"
+import {primaryColor,neutralColor, secondaryColor} from "./colors"
 
-const theme = createMuiTheme ({
-    pallete: {
-        primary: {
-            main: primaryColor,
-            contrastText: "black"
-        },
-        secondary: {
-            main: secondaryColor,
-            contrastText: "neutralColor"
-        },
-        text: {
-            primary: secondaryColor
-        }
-
+const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: primaryColor,
+        contrastText: secondaryColor    
+      },
+      text: {
+          primary: neutralColor
+      }
     }
-
-})
-
-export default theme
+  })
+  
+  export default theme 

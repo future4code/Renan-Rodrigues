@@ -1,16 +1,15 @@
 import React from "react"
+import error from '../assets/error.jpg'
+import Typography from '@material-ui/core/Typography'
+import { ErrorImage, ErrorPageContainer } from './styled'
 
-const ErroPage = () =>{
-
+const ErrorPage = () => {
     return (
-        <div>
-            <h1>ErroPage</h1>
-
-        </div>
-
+        <ErrorPageContainer>
+            <ErrorImage src={error} />
+            <Typography color={'primary'} variant={'h4'} align={'center'}>Erro 404 - Página Não Encontrada</Typography>
+        </ErrorPageContainer>
     )
-
-
 }
 
-export default ErroPage;
+export default ErrorPage

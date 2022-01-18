@@ -1,27 +1,26 @@
 import React from "react"
 
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import {Switch, Route } from "react-router-dom"
 import AddRecipesPage from "../AddRecipesPage/AddRecipesPage"
 import LoginPage from "../LoginPage/LoginPage"
 import RecipeDetailPage from "../RecipeDetailPage/RecipeDetailPage"
 import RecipeListPage from "../RecipesListPage/RecipesListPage"
 import SignUpPage from "../SignUpPage/SignUpPage"
 import ErroPage from "../ErroPage/ErroPage"
-import Header from "../components/Header/Header"
 
-const Router = () =>{
+
+const Router = ({setRigthButtonText}) =>{
 
     return (
-       <BrowserRouter>
-       <Header />
+      
        <Switch>
 
        <Route exact path ="/login">
-            <LoginPage />
+            <LoginPage setRigthButtonText ={setRigthButtonText} />
        </Route>
 
        <Route exact path ="/cadastro">
-            <SignUpPage/>
+            <SignUpPage setRigthButtonText ={setRigthButtonText}/>
        </Route>
        
        //Esse aqui é a minha Home do site... é o feed das receitas....
@@ -43,7 +42,7 @@ const Router = () =>{
        
        
        </Switch>
-       </BrowserRouter>
+       
 
     )
 

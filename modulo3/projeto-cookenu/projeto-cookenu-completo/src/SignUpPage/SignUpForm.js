@@ -1,31 +1,43 @@
-import React, {useState} from "react"
-import {InputsContainer} from "./styled"
+import React from "react"
+import {useState} from "react"
 import TextField from '@material-ui/core/TextField'
-import useForm from "../hooks/useForm"
 import Button from '@material-ui/core/Button'
-import {login} from "../services/user"
-import { useHistory } from "react-router-dom"
+import { InputsContainer } from './styled'
+import { SignUpFormContainer } from "./styled"
+import { useHistory } from 'react-router-dom'
+import useForm from '../hooks/useForm'
+import {signUp} from "../services/user"
 import CircularProgress from '@material-ui/core/CircularProgress'
 
+const SignUpForm = ({setRigthButtonText}) =>{
+    const history = useHistory ()
 
-const LoginForm = ({setRigthButtonText}) =>{
-
-    const [form, onChange, clear] = useForm ({email:"", password:""})
-    const history = useHistory()
+    const [form, onChange, clear] = useForm ({name:"", email:"", password:""})
     const [isLoading, setIsLoading] = useState(false)
-
-    const onSubmitForm = (event) =>{
+    
+    const onSubmitForm = (event) => {
         event.preventDefault()
-        login(form,clear, history, setRigthButtonText,setIsLoading)
+        signUp(form, clear, history, setRigthButtonText, setIsLoading)
+      }
+    
 
-    }
-
-   
 
     return (
-        
-            <InputsContainer >
-            <form onSubmit={onSubmitForm}>
+        <form onSubmit={onSubmitForm}>
+            <SignUpFormContainer  >
+            <InputsContainer>
+            <TextField
+                        name={'name'}
+                        value={form.name}
+                        onChange={onChange}
+                        label={"Nome"}
+                        variant={"filled"}
+                        fullWidth
+                        margin={"normal"}
+                        required
+                        autoFocus
+                       
+                    />
                  <TextField
                         name={'email'}
                         value={form.email}
@@ -47,7 +59,8 @@ const LoginForm = ({setRigthButtonText}) =>{
                         margin={"normal"}
                         required
                         type={"password"}
-                    />         
+                    />  
+                    </InputsContainer>       
                     <Button
                     type={"submit"}
                     fullWidth
@@ -55,16 +68,16 @@ const LoginForm = ({setRigthButtonText}) =>{
                     color={"primary"}
                     margin ={"normal"}
                 >
-                    {isLoading ? <CircularProgress color={"inherit"} size={24}/> : <>Fazer Login</>}
+                    {isLoading ? <CircularProgress color={"inherit"} size={24}/> : <>Fazer Cadastro</>}
                      </Button>
-                    </form>
-                    </InputsContainer>
+                   
+                    </SignUpFormContainer>
+                 </form>
                 
         
-
     )
 
 
 }
 
-export default LoginForm;
+export default SignUpForm;
