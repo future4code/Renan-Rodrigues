@@ -27,8 +27,19 @@ export const SignUpFormContainer = styled.div`
 `
 
 export const LogoImage = styled.img`
-  width: 70vw;
+  width: 60vw;
   max-width: 350px;
   margin-bottom: 3vh;
   border-radius: 20px;
+  margin-right: 50px
+
+  @media (max-width: 420px) {
+    /* position:absolute; */
+    /* width:60vw; */
+    /* margin-left:50px; */
+    /* margin-right:150px; */
+    padding-right:28px;
+    
+  }
+
 `

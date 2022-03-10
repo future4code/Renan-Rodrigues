@@ -10,15 +10,15 @@ import { BrowserRouter } from "react-router-dom";
 const App =() => {
 
   const token = localStorage.getItem ("token")
-  const [rightButtonText, setRigthButtonText] = useState (token ? "Logout": "Login")
+  const [rightButtonText, setRightButtonText] = useState (token ? "Logout": "Login")
 
   return (
     
     <ThemeProvider theme={theme}>
     
       <BrowserRouter>
-      <Header rightButtonText ={rightButtonText} setRigthButtonText ={setRigthButtonText} />
-      <Router setRigthButtonText ={setRigthButtonText} />
+      <Header rightButtonText ={rightButtonText} setRightButtonText ={setRightButtonText} />
+      <Router setRightButtonText ={setRightButtonText} />
       </BrowserRouter>
 
     </ThemeProvider>

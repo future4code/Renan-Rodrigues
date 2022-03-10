@@ -20,7 +20,7 @@ const Header = ({rightButtonText, setRightButtonText}) => {
     const rightButtonAction = () =>{
       if (token) {
         logout ()
-        setRightButtonText ("Login")
+        setRightButtonText("Login")
         goToLogin (history)
       } else {
         goToLogin (history)        
@@ -32,7 +32,7 @@ const Header = ({rightButtonText, setRightButtonText}) => {
     
       <AppBar position="static">
           <StyledToolbar> 
-            <Button onClick={() => goToRecipesList (history)} color="inherit">MASTER RECEITAS</Button>
+            <Button onClick={() => goToRecipesList (history)} color="inherit">COOKENU RECEITAS</Button>
             <Button onClick={rightButtonAction}  color="inherit">{rightButtonText}</Button>
           </StyledToolbar>
       </AppBar>

@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom"
 import CircularProgress from '@material-ui/core/CircularProgress'
 
 
-const LoginForm = ({setRigthButtonText}) =>{
+const LoginForm = ({setRightButtonText}) =>{
 
     const [form, onChange, clear] = useForm ({email:"", password:""})
     const history = useHistory()
@@ -16,7 +16,7 @@ const LoginForm = ({setRigthButtonText}) =>{
 
     const onSubmitForm = (event) =>{
         event.preventDefault()
-        login(form,clear, history, setRigthButtonText,setIsLoading)
+        login(form,clear, history, setRightButtonText,setIsLoading)
 
     }
 
