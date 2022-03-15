@@ -20,8 +20,6 @@ const SignUpForm = ({setRightButtonText}) =>{
         signUp(form, clear, history, setRightButtonText, setIsLoading)
       }
     
-
-
     return (
         <form onSubmit={onSubmitForm}>
             <SignUpFormContainer  >
@@ -62,11 +60,11 @@ const SignUpForm = ({setRightButtonText}) =>{
                     />  
                     </InputsContainer>       
                     <Button
-                    type={"submit"}
-                    fullWidth
-                    variant={"contained"}
-                    color={"primary"}
-                    margin ={"normal"}
+                        type={"submit"}
+                        fullWidth
+                        variant={"contained"}
+                        color={"primary"}
+                        margin ={"normal"}
                 >
                     {isLoading ? <CircularProgress color={"inherit"} size={24}/> : <>Fazer Cadastro</>}
                      </Button>

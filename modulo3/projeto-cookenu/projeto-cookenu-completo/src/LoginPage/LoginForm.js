@@ -17,10 +17,7 @@ const LoginForm = ({setRightButtonText}) =>{
     const onSubmitForm = (event) =>{
         event.preventDefault()
         login(form,clear, history, setRightButtonText,setIsLoading)
-
     }
-
-   
 
     return (
         
@@ -49,18 +46,16 @@ const LoginForm = ({setRightButtonText}) =>{
                         type={"password"}
                     />         
                     <Button
-                    type={"submit"}
-                    fullWidth
-                    variant={"contained"}
-                    color={"primary"}
-                    margin ={"normal"}
+                        type={"submit"}
+                        fullWidth
+                        variant={"contained"}
+                        color={"primary"}
+                        margin ={"normal"}
                 >
                     {isLoading ? <CircularProgress color={"inherit"} size={24}/> : <>Fazer Login</>}
                      </Button>
                     </form>
                     </InputsContainer>
-                
-        
 
     )
 

@@ -34,9 +34,7 @@ const LoginPage = ({setRightButtonText}) =>{
             </SignUpButtonContainer>
             </ScreenContainer>
             </div>
-
     )
-
 
 }
 

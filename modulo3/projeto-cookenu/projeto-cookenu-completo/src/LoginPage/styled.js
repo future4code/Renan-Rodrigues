@@ -6,19 +6,6 @@ export const ScreenContainer = styled.div`
 
   align-items: center;
   width: 100vw;
-  margin-top: 50vh;
-  margin-bottom: 10vh;
-  
-  @media (max-width:420px){
-    position:absolute;
-    bottom:30px;
-  }
-
-  @media (max-width:380px){
-    position:absolute;
-    bottom:10px;
-    
-  }
   
 `
 
@@ -29,7 +16,6 @@ export const InputsContainer = styled.div`
   max-width: 450px;
   align-items: center;
   margin-bottom: 20px;
-  /* border:solid 1px; */
   
 `
 
@@ -49,38 +35,27 @@ export const SignUpButtonContainer = styled.div`
 `
 
 export const LogoImage = styled.img`
-  position:absolute;
+
   width: 250px;
-  max-width: 300px;
-  bottom:280px;
-  /* margin-right: 800px; */
+  margin-top:40px;
   margin-left: 73vh;
   margin-bottom: 3vh;
   border-radius: 20px;
    
-  /* @media (max-width:420px){
-    margin-left: 108vh;
-
-  } */
   @media (max-width:420px){
-    position:absolute;
     width:250px;
     margin-left:70px;
     bottom:360px;
 
   }
   @media (max-width:380px){
-    position:absolute;
+    // position:absolute;
     width:200px;
     bottom:320px;
     margin-left:75px;
     
-
   }
   
-  
-  
-
   `
 
   export const h3 = styled.h3 `
