@@ -9,18 +9,18 @@ import SignUpPage from "../SignUpPage/SignUpPage"
 import ErroPage from "../ErroPage/ErroPage"
 
 
-const Router = ({setRigthButtonText}) =>{
+const Router = ({setRightButtonText}) =>{
 
     return (
       
        <Switch>
 
        <Route exact path ="/login">
-            <LoginPage setRigthButtonText ={setRigthButtonText} />
+            <LoginPage setRightButtonText ={setRightButtonText} />
        </Route>
 
        <Route exact path ="/cadastro">
-            <SignUpPage setRigthButtonText ={setRigthButtonText}/>
+            <SignUpPage setRightButtonText ={setRightButtonText}/>
        </Route>
        
        //Esse aqui é a minha Home do site... é o feed das receitas....
