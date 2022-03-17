@@ -2,7 +2,7 @@ import axios from "axios"
 import {goToRecipesList} from "../routes/coordinator"
 
 
- export const login = (body, clear, history, setRigthButtonText,setIsLoading) => {
+ export const login = (body, clear, history, setRightButtonText,setIsLoading) => {
     setIsLoading(true)
     axios.post ("https://cookenu-api.herokuapp.com/user/login",body)
     .then((res)=> {
@@ -10,7 +10,7 @@ import {goToRecipesList} from "../routes/coordinator"
         clear()
         setIsLoading(false)
         goToRecipesList (history)
-        setRigthButtonText ("Logout")
+        setRightButtonText ("Logout")
     })
 
     .catch((err) => {
@@ -20,7 +20,7 @@ import {goToRecipesList} from "../routes/coordinator"
 
 }
 
-export const signUp = (body, clear, history, setRigthButtonText,setIsLoading) => {
+export const signUp = (body, clear, history, setRightButtonText,setIsLoading) => {
     setIsLoading(true)
     axios.post("https://cookenu-api.herokuapp.com/user/signup", body)
         .then((res) => {
@@ -28,7 +28,7 @@ export const signUp = (body, clear, history, setRigthButtonText,setIsLoading) =>
             clear()
             setIsLoading(true)
             goToRecipesList (history)
-            setRigthButtonText ("Logout")
+            setRightButtonText ("Logout")
             
         })
         .catch((err) => {

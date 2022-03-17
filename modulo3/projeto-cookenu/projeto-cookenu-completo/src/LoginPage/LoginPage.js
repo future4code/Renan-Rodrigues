@@ -11,16 +11,15 @@ import useUnProtectedPage from "../hooks/useUnProtectedPage"
 
 
 
-const LoginPage = ({setRigthButtonText}) =>{
+const LoginPage = ({setRightButtonText}) =>{
     useUnProtectedPage()
     const history = useHistory ()
     
     return (
-        
-        <ScreenContainer>
+        <div>
             <LogoImage src={logo} />
-            <LoginForm setRigthButtonText ={setRigthButtonText}/>
-                    
+        <ScreenContainer>
+            <LoginForm setRightButtonText ={setRightButtonText}/> 
             <SignUpButtonContainer>
                 <Button 
                     onClick={() => goToSignUp(history)}   
@@ -33,11 +32,8 @@ const LoginPage = ({setRigthButtonText}) =>{
                         Não possui conta? Cadastre-se!
                 </Button> 
             </SignUpButtonContainer>
-
-
             </ScreenContainer>
-
-        
+            </div>
 
     )
 

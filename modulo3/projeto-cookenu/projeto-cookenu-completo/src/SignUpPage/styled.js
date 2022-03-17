@@ -31,4 +31,14 @@ export const LogoImage = styled.img`
   max-width: 350px;
   margin-bottom: 3vh;
   border-radius: 20px;
+  
+  @media (max-width: 420px){
+    width:60vw;
+    margin-right:25px;
+  }
+
+  @media (max-width: 380px){
+    width:60vw;
+    margin-right:25px;
+  }
 `

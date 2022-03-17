@@ -6,13 +6,13 @@ import { LogoImage } from "./styled"
 import useUnProtectedPage from "../hooks/useUnProtectedPage"
 
 
-const SignUpPage = ({setRigthButtonText}) =>{
+const SignUpPage = ({setRightButtonText}) =>{
     useUnProtectedPage()
 
     return (
         <ScreenContainer>
             <LogoImage src={logo}/>
-            <SignUpForm setRigthButtonText ={setRigthButtonText} />
+            <SignUpForm setRightButtonText ={setRightButtonText} />
         </ScreenContainer>
 
     )
