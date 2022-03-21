@@ -42,12 +42,35 @@ export const LogoImage = styled.img`
   width: 70vw;
   max-width: 300px;
   margin-right: 800px;
-  margin-left: 120vh;
+  margin-left: 112vh;
   margin-bottom: 3vh;
   border-radius: 20px;
-   
-  
+ 
+  @media (max-width: 420px) {
+    /* position:absolute; */
+    width:60vw;
+    /* margin-left:50px; */
+    /* margin-right:150px; */
+    padding-left:60px;
+    
+  }
+ 
+  @media (max-width: 390px) {
+    /* position:absolute; */
+    width:60vw;
+    /* margin-left:50px; */
+    /* margin-right:150px; */
+    padding-right:125px;
+  }
 
+  @media (max-width: 380px) {
+    /* position:absolute; */
+    width:60vw;
+    /* margin-left:50px; */
+    padding-left:250px;
+  }
+
+  
   `
 
   export const h3 = styled.h3 `
