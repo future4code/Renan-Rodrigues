@@ -2,8 +2,8 @@ export const verMegaSena = (history, id) => {
     history.push("/");
   };
   
-  export const verQuina = (history) => {
-    history.push("/quina");
+  export const verQuina = (history, id) => {
+    history.push(`/quina`);
   };
   
   export const verLotoFacil = (history) => {
@@ -22,6 +22,3 @@ export const verMegaSena = (history, id) => {
     history.push("/diadedosorte");
   };
 
-  // export const verDiaDeSorte = (history) => {
-  //   history.push(`/diadedosorte/${id}`);
-  // };

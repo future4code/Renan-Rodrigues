@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const useRequestData = (url) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
